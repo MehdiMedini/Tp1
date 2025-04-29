@@ -57,7 +57,7 @@ fun FirstUI(modifier: Modifier = Modifier) {
             onAddItem = {
                 if (textValue.isNotBlank()) {
                     itemsList.add(textValue)
-                    textValue = ""
+                    textValue = "" // Clear text field
                     updateFilteredList("")
                 }
             }
